@@ -8,6 +8,7 @@ from utils import get_dummy_history
 router = APIRouter()
 CLIENTS = set()
 
+
 @router.websocket(
     path="/meeting/{meeting_id}/terms"
 )

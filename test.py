@@ -9,7 +9,7 @@ def now_iso():
     return datetime.now().isoformat(timespec="seconds").replace("+00:00", "Z")
 
 async def test_websocket():
-    uri = "ws://localhost:5001/meeting/test_meeting_123/terms"
+    uri = "ws://localhost:8080/meeting/test_meeting_123/terms"
     # Example: Add headers if your server requires authentication (e.g., token)
     headers = {
         # "Authorization": "Bearer YOUR_TOKEN_HERE"
